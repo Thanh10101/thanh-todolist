@@ -12,7 +12,7 @@ function TodoList() {
     return (
         <>
             <Row>
-                <h2 className="title-List">ALl todos</h2>
+                <h2 className="title-List">ALL todos</h2>
             </Row>
             <Row>
                 <Col span={24}>

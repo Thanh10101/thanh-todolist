@@ -30,7 +30,7 @@ function TodoItem(props) {
     dispatch(deleteTodo(todo.id));
     setConfirmLoading(false);
     setIsPopVisible(false);
-    toast.success("Success", "Removed success");
+    toast.success("Success", "");
   };
 
   const handlePopCancel = () => {
@@ -57,7 +57,7 @@ function TodoItem(props) {
 
     dispatch(updateTodo(data));
     setIsModalVisible(false);
-    toast.success("Success", "Done");
+    toast.success("Success", "");
   };
 
   return (
@@ -66,29 +66,29 @@ function TodoItem(props) {
         <div className="item-star">
           <div className="item-status">
             {todo.complete ? (
-              <CheckOutlined style={{ fontSize: "35px", color: "orange" }} />
+               <p></p>
             ) : (
-              <CloseOutlined style={{ fontSize: "35px", color: "orange" }} />
+              <p></p>
             )}
           </div>
         </div>
         <div className="item-body">
-          <h3 className="todo-name">{todo.name}</h3>
-          <p className="todo-time">{todo.time}</p>
+          <h3 className="todo-name">Tên todo: {todo.name}</h3>
+          <p className="todo-time">Ngày: {todo.time}</p>
           <p className="todo-status">
-            {todo.complete ? "Đã xong" : "Chua xong"}
+            {todo.complete ? "Trạng thái:Đã xong" : "Trạng thái:Chua xong"}
           </p>
         </div>
         <div className="item-end">
           {!todo.complete && (
             <div className="item-icon" onClick={onFinishTodo}>
               <FileDoneOutlined
-                style={{ fontSize: "20px", color: "green" }}
+                style={{ fontSize: "20px", color: "black" }}
               />
             </div>
           )}
           <div className="item-icon" onClick={showModal}>
-            <EditOutlined style={{ fontSize: "20px", color: "blue" }} />
+            <EditOutlined style={{ fontSize: "20px", color: "black" }} />
           </div>
           <div className="item-icon">
             <Popconfirm
@@ -101,7 +101,7 @@ function TodoItem(props) {
               cancelText="NO"
             >
               <DeleteOutlined
-                style={{ fontSize: "20px", color: "red" }}
+                style={{ fontSize: "20px", color: "black" }}
                 onClick={showPopconfirm}
               />
             </Popconfirm>
