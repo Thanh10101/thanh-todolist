@@ -46,7 +46,7 @@ function TodoItem(props) {
 
     dispatch(updateTodo(data));
     setIsModalVisible(false);
-    toast.success("Success", "Updated Success");
+    toast.success("Success", "");
   };
 
   const onFinishTodo = () => {
@@ -66,9 +66,9 @@ function TodoItem(props) {
         <div className="item-star">
           <div className="item-status">
             {todo.complete ? (
-              <CheckOutlined style={{ fontSize: "35px", color: "#4BB543" }} />
+              <CheckOutlined style={{ fontSize: "35px", color: "orange" }} />
             ) : (
-              <CloseOutlined style={{ fontSize: "35px", color: "#FC100D" }} />
+              <CloseOutlined style={{ fontSize: "35px", color: "orange" }} />
             )}
           </div>
         </div>
@@ -97,8 +97,8 @@ function TodoItem(props) {
               onConfirm={handlePopOk}
               okButtonProps={{ loading: confirmLoading }}
               onCancel={handlePopCancel}
-              okText="Có"
-              cancelText="Không"
+              okText="Yes"
+              cancelText="NO"
             >
               <DeleteOutlined
                 style={{ fontSize: "20px", color: "red" }}
@@ -109,7 +109,7 @@ function TodoItem(props) {
         </div>
       </div>
       <Modal
-        title="Chỉnh sửa todo"
+        title="sửa todo"
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={null}
@@ -127,7 +127,7 @@ function TodoItem(props) {
             rules={[
               {
                 required: true,
-                message: "Vui lòng điền todo!",
+                message: "Vui  lòng điền todo!",
               },
             ]}
           >
