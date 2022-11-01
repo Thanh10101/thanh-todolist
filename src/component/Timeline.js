@@ -21,7 +21,7 @@ function Timeline(props) {
                     <VerticalTimelineElement
                         className="vertical-timeline-elemeny--work"
                         date={todo.date}
-                        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                        iconStyle={{ background: "transparent", color: "#fff" }}
                     >
                         <h3 className="vertical-timeline-element-title">{todo.name}</h3>
                         <h4 className="vertical-timeline-element-subtitle">{todo.time}</h4>

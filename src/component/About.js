@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 function About(props) {
     useEffect(() => {
-        document.title = "Trang chủ";
+        document.title = "Gới thiệu về Thành";
     }, []);
 
     return (

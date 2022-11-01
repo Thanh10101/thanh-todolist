@@ -21,7 +21,7 @@ function TodoForm(props) {
             complete: false,
         };
         dispatch(addTodo(data));
-        toast.success("Success", "Đã thêm todo");
+        toast.success("Success", "");
     };
 
     return ( <

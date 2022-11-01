@@ -3,7 +3,7 @@ const initialState = {
     todos: todos,
 };
 
-const todoReducer = (state = initialState, action) => {
+ const todoReducer = (state = initialState, action) => {
     switch(action.type){
         case "ADD_TODO":{
             const newTodos = [...state.todos, action.payload];
@@ -27,5 +27,4 @@ const todoReducer = (state = initialState, action) => {
             return state;
     }
 };
-
-export default todoReducer;
+export default todoReducer

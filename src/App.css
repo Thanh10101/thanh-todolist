@@ -1,158 +1,160 @@
-* {
-    list-style: none;
-}
-
-h1,
-p {
-    font-size: 30px;
-    color: black;
-}
-
-.Home {
-    background-color: orange;
-    width: auto;
-    height: auto;
-}
-
-.home {
-    color: orange;
-    text-align: center;
-    font-size: 50px;
-}
-
-.body-part {
-    align-items: center;
-    text-align: center;
-}
-
-.thongtin {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 20px;
-    animation-name: text-display;
-    animation-duration: 2s;
-}
-
-.table-col-title {
-    text-align: left;
-    font-weight: 200;
-}
-
-.title-List {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-}
-
-.title-Form {
-    font-size: 30px;
-    color: yelow;
-    text-align: center;
-}
-
-.site-layout-header .site-layout-content {
-    background: transparent;
-}
-
-.todo-item {
-    margin: 10px 20px;
-    display: flex;
-    width: 250px;
-    height: 100px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: transparent;
-}
-
-.item-star {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item-status {
-    margin: 0 16px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.item-body {
-    flex: 1;
-}
-
-.todo-name {
-    color: #2577fd;
-    font-size: 14px;
-    margin: 5px 3px;
-}
-
-.title-timeline {
-    color: red;
-    font-weight: 1000;
-    font-size: 30px;
-    text-align: center
-}
-
-.vertical-timeline::before {
-    background: #ccc !important;
-}
-
-.vertical-timeline-element-content {
-    -webkit-box-shadow: 0 3px 0 #4bb54385 !important;
-    box-shadow: 0 3px 0 #4bb54385 !important;
-}
-
-.vertical-timeline-element-title {
-    color: #2577fd;
-    padding: 5px 0px;
-    font-size: 25px !important;
-}
-
-.todo-time {
-    color: #0a0c11;
-    font-size: 16px;
-    margin: 5px 3px;
-}
-
-.todo-status {
-    color: #868c98;
-    font-size: 16px;
-    margin: 5px 3px;
-}
-
-.vertical-timeline-element-subtitle {
-    color: rgb(19, 14, 14);
-    font-size: 16px;
-    padding: 10px 0px;
-}
-
-.item-end {
-    margin: 0 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.item-icon {
-    margin: 0px;
-}
-
-Button {
-    margin: 20px;
-    color: gray;
-}
-
-.vertical-timeline-element-desc {
-    color: rgb(19, 14, 14);
-    font-size: 16px;
-}
-
-.menu {
-    font-size: 20px;
-    font-weight: bold;
-    background: green;
-    background: transparent;
-}
+    * {
+        list-style: none;
+        align-items: center;
+        width: 100%;
+    }
+    
+    h1,
+    p {
+        font-size: 30px;
+        color: black;
+        align-items: center;
+    }
+    
+    .Home {
+        background-color: orange;
+        width: auto;
+        height: auto;
+    }
+    
+    .home {
+        color: orange;
+        text-align: center;
+        font-size: 50px;
+        align-items: center;
+    }
+    
+    .body-part {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .thongtin {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .table-col-title {
+        text-align: left;
+        font-weight: 200px;
+    }
+    
+    .title-List {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .title-Form {
+        font-size: 30px;
+        color: yelow;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .site-layout-header .site-layout-content {
+        background: gray;
+    }
+    
+    .todo-item {
+        margin: 10px 20px;
+        display: flex;
+        width: 250px;
+        height: 100px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: transparent;
+        align-items: center;
+    }
+    
+    .item-star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-status {
+        margin: 0 16px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    
+    .item-body {
+        flex: 1;
+    }
+    
+    .todo-name {
+        color: black;
+        font-size: 14px;
+        margin: 5px 3px;
+    }
+    
+    .title-timeline {
+        color: black;
+        font-weight: 1000;
+        font-size: 30px;
+        text-align: center
+    }
+    
+    .vertical-timeline::before {
+        background: #ccc !important;
+    }
+    
+    .vertical-timeline-element-content {
+        -webkit-box-shadow: 0 3px 0 black !important;
+        box-shadow: 0 3px 0 black !important;
+    }
+    
+    .vertical-timeline-element-title {
+        color: black;
+        padding: 25px 0px;
+        font-size: 25px !important;
+    }
+    
+    .todo-time {
+        color: black;
+        font-size: 16px;
+        margin: 5px 3px;
+    }
+    
+    .todo-status {
+        color: #868c98;
+        font-size: 16px;
+        margin: 5px 3px;
+    }
+    
+    .vertical-timeline-element-subtitle {
+        color: black;
+        font-size: 16px;
+        padding: 100px 0px;
+    }
+    
+    .item-end {
+        margin: 0 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    Button {
+        margin: 20px;
+        color: gray;
+        align-items: center;
+    }
+    
+    .vertical-timeline-element-desc {
+        color: rgb(19, 14, 14);
+        font-size: 16px;
+    }
+    
+    .menu {
+        font-size: 20px;
+        font-weight: bold;
+        background: green;
+        background: transparent;
+    }
