@@ -15,7 +15,6 @@ function Timeline(props) {
             className="App"
             style={{ background: "white", fontFamily: "Times New Roman" }}
         >
-            <h1 className="title-timeline">Time-line</h1>
             <VerticalTimeline>
                 {todos.map(todo => (
                     <VerticalTimelineElement
