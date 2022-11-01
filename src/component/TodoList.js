@@ -7,7 +7,6 @@ function TodoList() {
     const todos = useSelector((state) => state.todoReducer.todos);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         document.title = "Todo List của Nguyễn Trịnh Thành";
     }, []);
     return (

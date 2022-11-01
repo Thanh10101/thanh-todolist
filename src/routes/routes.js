@@ -9,8 +9,8 @@ function Routes(props) {
   return (
     <Switch>
       <Route exact path="/" component={About} />
-      <Route exact path="/todos" component={TodoList} />
       <Route exact path="/todos/input" component={TodoForm} />
+      <Route exact path="/todos" component={TodoList} />
       <Route exact path="/todos/timeline" component={Timeline} />
     </Switch>
   );

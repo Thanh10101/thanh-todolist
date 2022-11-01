@@ -36,17 +36,17 @@ function App() {
             defaultSelectedKeys={["/todos"]}
             selectedKeys={[pathname]}
           >
-            <Menu.Item key="/" icon={<HomeOutlined />}>
-              <Link to="/">Trang chủ</Link>
-            </Menu.Item>
-            <Menu.Item key="/todos" icon={<UnorderedListOutlined />}>
-              <Link to="/todos">All to do</Link>
-            </Menu.Item>
-            <Menu.Item key="/todos/input" icon={<FormOutlined />}>
+            <Menu.Item key="/todos/input" >
               <Link to="/todos/input">Thêm to do</Link>
             </Menu.Item>
-            <Menu.Item key="/todos/timeline" icon={<FieldTimeOutlined />}>
+            <Menu.Item key="/todos" >
+              <Link to="/todos">All to do</Link>
+            </Menu.Item>
+            <Menu.Item key="/todos/timeline">
               <Link to="/todos/timeline">Time-line </Link>
+            </Menu.Item>
+            <Menu.Item key="/" >
+              <Link to="/">Giới thiệu bản thân</Link>
             </Menu.Item>
           </Menu>
         </Header>

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 function About(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         document.title = "Trang chủ";
     }, []);
 

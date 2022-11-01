@@ -7,7 +7,6 @@ function Timeline(props) {
     const todos = useSelector((state) => state.todoReducer.todos);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         document.title = "Todo List cảu Nguyễn Trịnh Thành";
     }, []);
 
